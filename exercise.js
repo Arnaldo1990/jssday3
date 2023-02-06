@@ -51,12 +51,20 @@ console.log(average1);
 
 for (let i = 1; i <= 100; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
-        console.log(i + "FizzBuzz");
+        console.log("FizzBuzz");
     } else if (i % 3 === 0) {
-        console.log(i + "Fizz");
+        console.log("Fizz");
     } else if (i % 5 === 0) {
-        console.log(i + "Buzz");
+        console.log("Buzz");
     } else {
         console.log(i);
     }
 }
+// ex 3
+let star = 5;
+let string = "";
+for (let i = 1; i <= star; i++) {
+    for (let k = 0; k < i; k++)
+        string += "/star";
+}
+console.log(string);
