@@ -61,10 +61,11 @@ for (let i = 1; i <= 100; i++) {
     }
 }
 // ex 3
-let star = 5;
+let n = 6;
+
 let string = "";
-for (let i = 1; i <= star; i++) {
-    for (let k = 0; k < i; k++)
-        string += "/star";
+
+for (let i = 0; i < n; i++) {
+    string += "*"
+    document.getElementById("hello").innerHTML += `${string} <br> `
 }
-console.log(string);
