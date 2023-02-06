@@ -69,3 +69,24 @@ for (let i = 0; i < n; i++) {
     string += "*"
     document.getElementById("hello").innerHTML += `${string} <br> `
 }
+
+// Challenge
+
+// ex Description:
+let Students = ["John", "Jane", "Joanna", "Jeremy", "Kris", "Keanu"];
+let MathGrades = [70, 85, 45, 73, 90, 67]
+var result = prompt("type your name");
+if (Students.includes(result)) {
+    let i = Students.indexOf(result);
+    console.log(MathGrades[i])
+    if (MathGrades[i] < 60) {
+        document.getElementById("grade").style.color = "red";
+    } else if (MathGrades[i] > 60 && MathGrades[i] < 70) {
+        document.getElementById("grade").style.color = "yellow";
+    } else if (MathGrades[i] > 70) {
+        document.getElementById("grade").style.color = "green";
+    } else {
+        document.getElementById("grade").style.color = "blue";
+    }
+    document.getElementById("grade").innerHTML = `${Students[i]} has reached ${MathGrades[i]} points in Math this season.`
+}
