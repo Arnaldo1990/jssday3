@@ -46,3 +46,17 @@ for (let i = 0; i < grades.length; i++) {
 let arr = [76, 85, 65, 93, 81];
 let average1 = arr.reduce((a, b) => a + b, 0) / arr.length;
 console.log(average1);
+
+// ex 2 | FizzBuzz
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log(i + "FizzBuzz");
+    } else if (i % 3 === 0) {
+        console.log(i + "Fizz");
+    } else if (i % 5 === 0) {
+        console.log(i + "Buzz");
+    } else {
+        console.log(i);
+    }
+}
